@@ -1,68 +1,48 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
-body {
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+* {
+  padding: 0;
   margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  box-sizing: border-box;
+}
+body {
+  background-color: #191919;
+  overflow-x: hidden;
+}
+.header-bg {
+  background-color: #262626;
+}
+.loginBtn {
+  background-color: rgba(202, 255, 51, 1);
+}
+.selected {
+  border: 1px solid #fff;
+  padding: 10px 15px;
+  border-radius: 30px;
+  font-weight: 800;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+/* Hero Section */
+.rescueNet {
+  color: rgba(202, 255, 51, 1);
 }
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
+.welCome {
+  background-color: rgba(28, 28, 28, 1);
+  z-index: 0;
 }
-button:hover {
-  border-color: #646cff;
+.valueItems {
+  border-left: 3px solid;
 }
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
+@keyframes moveRight {
+  0%,
+  100% {
+    transform: translateX(0);
   }
-  a:hover {
-    color: #747bff;
+  50% {
+    transform: translateX(20px); /* Adjust the distance you want to move */
   }
-  button {
-    background-color: #f9f9f9;
-  }
+}
+.animated {
+  animation: moveRight 2s ease-in-out infinite alternate; /* Adjust duration and timing function as needed */
 }
