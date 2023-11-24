@@ -1,10 +1,5 @@
-import {
-  AbstractDesign,
-  Map,
-  gMaps,
-  heroImg,
-  heroImg2,
-} from "../assets/images";
+import { Link } from "react-router-dom";
+import { AbstractDesign, Map, heroImg, heroImg2 } from "../assets/images";
 import { FaLongArrowAltLeft } from "react-icons/fa";
 const Home = () => {
   return (
@@ -75,7 +70,7 @@ const Home = () => {
             </p>
           </div>
           <div className="flex flex-col gap-4  text-slate-400 valueItems pl-2 ">
-            <h2 className="text-2xl ">Integrity</h2>
+            <h2 className="text-2xl ">User-Centric Design</h2>
             <p>
               Prioritizing an intuitive and user-friendly interface to empower
               rescue teams with tools that are easy to navigate and utilize in
@@ -110,13 +105,13 @@ const Home = () => {
       <div className="w-full ">
         <div className="flex w-full p-20  justify-between gap-5  group ">
           <div className="w-2/4  overflow-hidden ">
-            <a href={gMaps}>
+            <Link to={"gmaps"}>
               <img
                 src={Map}
                 alt=""
                 className="w-full h-96   object-cover  group-hover:scale-110 duration-1000"
               />
-            </a>
+            </Link>
           </div>
           <div className="w-2/4 text-white py-10 px-5">
             <h1 className="text-6xl rescueNet">Interactive Mapping</h1>
@@ -128,9 +123,9 @@ const Home = () => {
               Revolutionize the way you navigate rescue scenarios, fostering
               efficient collaboration and precision across the entire network.
             </p>
-            <a href={gMaps}>
+            <Link to={"gmaps"}>
               <FaLongArrowAltLeft className="rescueNet text-6xl mt-10  animated" />
-            </a>
+            </Link>
           </div>
         </div>
       </div>
