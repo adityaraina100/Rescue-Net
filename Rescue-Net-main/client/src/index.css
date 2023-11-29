@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #191919;
+  overflow-x: hidden;
+}
+.header-bg {
+  background-color: #262626;
+}
+.loginBtn {
+  background-color: rgba(202, 255, 51, 1);
+}
+.selected {
+  border: 1px solid #fff;
+  padding: 10px 15px;
+  border-radius: 30px;
+  font-weight: 800;
+}
+
+/* Hero Section */
+.rescueNet {
+  color: rgba(202, 255, 51, 1);
+}
+.welCome {
+  background-color: rgba(28, 28, 28, 1);
+  z-index: 0;
+}
+.valueItems {
+  border-left: 3px solid;
+}
+@keyframes moveRight {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(20px); /* Adjust the distance you want to move */
+  }
+}
+.animated {
+  animation: moveRight 2s ease-in-out infinite alternate; /* Adjust duration and timing function as needed */
+}
+h1{
+  color: rgba(202, 255, 51, 1);
+}
+.bod{
+  background-color: #1C1C1C;
+  
+}
+.LoginContainer{
+  background-color: #262626;
+}
+
+.gap{
+  margin:10px;
+  border-radius: 65px;
+}
