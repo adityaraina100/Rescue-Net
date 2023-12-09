@@ -4,4 +4,6 @@ A centralized web app which merges rescue agencies across the nation to come tog
 **SIH 1440**
 
 
-**Technologies Utilized :** React,Python,GCP
+**Technologies Utilized :** React,Python,Leaflet,NodeJs,Tailwind CSS
+
+
