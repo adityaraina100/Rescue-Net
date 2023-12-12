@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  scroll-behavior: smooth;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #191919;
+  overflow-x: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.header-bg {
+  background-color: #262626;
+}
+.loginBtn {
+  background-color: rgba(202, 255, 51, 1);
+}
+
+/* Hero Section */
+.rescueNet {
+  color: rgba(202, 255, 51, 1);
+}
+.lightShade {
+  background-color: rgba(28, 28, 28, 1);
+}
+.valueItems {
+  border-left: 3px solid;
+}
+@keyframes moveRight {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(20px); /* Adjust the distance you want to move */
+  }
+}
+.animated {
+  animation: moveRight 2s ease-in-out infinite alternate;
+}
+.leaflet-marker-icon {
+  border-radius: 50%;
+  background-size: cover;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+.card {
+  /* From https://css.glass */
+  /* From https://css.glass */
+  background: rgba(0, 0, 0, 0.37);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2.4px);
+  -webkit-backdrop-filter: blur(2.4px);
+  border: 1px solid rgba(0, 0, 0, 1);
+}
